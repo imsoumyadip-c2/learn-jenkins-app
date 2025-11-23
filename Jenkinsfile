@@ -44,8 +44,8 @@ pipeline {
             }
                 steps {
                     sh '''
-                        npm install -g serve
-                        serve -s biild
+                        npm install serve
+                        node_modules/.bin/serve -s biild
                         npx playwrite test
                     '''
                 }
